@@ -1,0 +1,6 @@
+This is a test
+How I got here:
+Created the repository
+Installed the Git App on my desktop by pressing the 'set up in desktop' button
+I logged into the app and cloned the repository
+On the Git App main menu, I pressed 'open in external editor'
