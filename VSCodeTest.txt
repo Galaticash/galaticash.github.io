@@ -6,3 +6,10 @@ I logged into the app and cloned the repository
 On the Git App main menu, I pressed 'open in external editor'
 
 Make sure to know if your project is a public or private repository and to write your notes accordingly. It would not do for people to see me type yeet at the end of every commit haha
+
+How to commit code:
+- change code in VS (add files, edit code, etc)
+- SAVE
+- open GitHub Desktop
+- Type in a message for the commit and commit it to the current branch
+- 
