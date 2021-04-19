@@ -12,4 +12,7 @@ How to commit code:
 - SAVE
 - open GitHub Desktop
 - Type in a message for the commit and commit it to the current branch
-- 
+- look over the changes
+- press the 'Push origin' button to push the local commit to GitHub
+- view the repository on GitHub.com
+- profit
