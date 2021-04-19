@@ -4,3 +4,5 @@ Created the repository
 Installed the Git App on my desktop by pressing the 'set up in desktop' button
 I logged into the app and cloned the repository
 On the Git App main menu, I pressed 'open in external editor'
+
+Make sure to know if your project is a public or private repository and to write your notes accordingly. It would not do for people to see me type yeet at the end of every commit haha
