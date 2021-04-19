@@ -16,3 +16,7 @@ How to commit code:
 - press the 'Push origin' button to push the local commit to GitHub
 - view the repository on GitHub.com
 - profit
+
+How to fetch code:
+- sometimes it will automatically fetch code, but to do it manually, open GitHub Desktop and push the 'Pull origin' button at the top
+- The number of changes will be listed
