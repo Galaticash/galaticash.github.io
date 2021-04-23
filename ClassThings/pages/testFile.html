@@ -8,6 +8,166 @@
     <link rel="stylesheet" href="../style.css"/>
 </head>
 <body>
-    <a href="../index.html">back</a>
+    <nav><a href="../index.html">back</a></nav>
+    <main>
+        <h1>Testing VSCode Shortcuts</h1>
+        <ul>
+            <li class="items1"></li>
+            <li class="items2"></li>
+            <li class="items3"></li>
+            <li class="items4"></li>
+            <li class="items5"></li>
+        </ul>
+
+        <p>
+            @ - starting at
+            @- - starting at (descending)
+            $ - number placeholder (starts at 1 unless specified)
+            . - add a name
+            # - add an id attribute
+            * - multiple things
+            > - add a child
+            + - add a sibling
+            ^ - add a sibling to the parent
+            [] - add attributes
+            {} - text
+        </p>
+
+
+        "p[title="Hello world"]" - add a title attribute
+        <p title="Hello world"></p>
+
+        "a{Click me!}" - add text inside the tag
+        <a href="">Click me!</a>
+
+        "p>{Click }+a{here}+{ to continue}" - insert another object between text
+        <p>Click <a href="">here</a> to continue</p>
+
+        "p.class1.class2.class3" - add multiple classes
+        <p class="class1 class2 class3"></p>
+
+        "div>(ul>li*5)+p"
+        <div>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <p></p>
+        </div>
+
+        "div>ul>li*5^p" - same as above
+        <div>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <p></p>
+        </div>
+
+        "ul>li>p^img"
+        <ul>
+            <li>
+                <p></p>
+            </li>
+            <li>
+                <p></p>
+            </li>
+            <li>
+                <p></p>
+            </li>
+            <li>
+                <p></p>
+            </li>
+            <li>
+                <p></p>
+            </li>
+            <img src="" alt="">
+        </ul>
+
+        "ul>li*5>p+img" - makes 5 li with a p and img in each
+        <ul>
+            <li>
+                <p></p>
+                <img src="" alt="">
+            </li>
+            <li>
+                <p></p>
+                <img src="" alt="">
+            </li>
+            <li>
+                <p></p>
+                <img src="" alt="">
+            </li>
+            <li>
+                <p></p>
+                <img src="" alt="">
+            </li>
+            <li>
+                <p></p>
+                <img src="" alt="">
+            </li>
+        </ul>
+
+        "ul>li*5>p>li" - add images inside p inside li inside...
+        <ul>
+            <li>
+                <p><img src="" alt=""></p>
+            </li>
+            <li>
+                <p><img src="" alt=""></p>
+            </li>
+            <li>
+                <p><img src="" alt=""></p>
+            </li>
+            <li>
+                <p><img src="" alt=""></p>
+            </li>
+            <li>
+                <p><img src="" alt=""></p>
+            </li>
+        </ul>
+
+        "ul>li.item$@10*5"
+        <ul>
+            <li class="items10"></li>
+            <li class="items11"></li>
+            <li class="items12"></li>
+            <li class="items13"></li>
+            <li class="items14"></li>
+        </ul>
+
+        "ul>li.item$@-*5"
+        <ul>
+            <li class="items5"></li>
+            <li class="items4"></li>
+            <li class="items3"></li>
+            <li class="items2"></li>
+            <li class="items1"></li>
+        </ul>
+        "ul>li.item$@-10*5" - descend to 10, 5 li
+        <ul>
+            <li class="item14"></li>
+            <li class="item13"></li>
+            <li class="item12"></li>
+            <li class="item11"></li>
+            <li class="item10"></li>
+        </ul>
+
+        ul>li.itemNum$@-3*5
+        <ul>
+            <li class="itemNum7"></li>
+            <li class="itemNum6"></li>
+            <li class="itemNum5"></li>
+            <li class="itemNum4"></li>
+            <li class="itemNum3"></li>
+        </ul>
+
+    </main>
 </body>
 </html>
