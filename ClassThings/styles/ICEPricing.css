@@ -1,11 +1,40 @@
 *{
     font-family: 'Rubik', sans-serif;
+
+    --accentColor: #12aaea;
+    --accentColor2: #ffcd2c;
+    --backgroudColor: #e2e9ef;
+}
+
+main{
+    background-color: var(--backgroudColor);
+    grid: 
+}
+
+section{
+    color: var(--backgroudColor)
 }
 
 h1{
-
+    font-size: 1.5em;
 }
 
 h2{
+    color: var(--accentColor);
+}
 
+
+section .icon{
+    /* Make sure same size*/
+}
+img{
+
+}
+
+ul{
+    text-decoration: none;
+}
+
+button:hover{
+    background-color: yellow;
 }
