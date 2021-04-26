@@ -3,16 +3,18 @@
 
     --accentColor: #12aaea;
     --accentColor2: #ffcd2c;
-    --backgroudColor: #e2e9ef;
+    --backgroudColor: #92a0a5;
 }
 
 main{
     background-color: var(--backgroudColor);
-    grid: 
+    /*grid: */
+    text-align: center;
 }
 
 section{
-    color: var(--backgroudColor)
+    color: var(--accentColor);
+    background-color: white;
 }
 
 h1{
@@ -23,7 +25,6 @@ h2{
     color: var(--accentColor);
 }
 
-
 section .icon{
     /* Make sure same size*/
 }
@@ -31,10 +32,13 @@ img{
 
 }
 
-ul{
-    text-decoration: none;
+
+li {
+    color: var(--backgroudColor);
+    list-style: none;
 }
 
+
 button:hover{
-    background-color: yellow;
+    background-color: var(--accentColor2);
 }
