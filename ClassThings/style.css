@@ -6,7 +6,8 @@
 
     --primaryColor: white;
     --secondaryColor: black;
-    --accentColor: rgb(138, 43, 226);
+    --accentColor: rgb(198, 138, 255);
+    --accentColor2: rgb(197, 197, 197);
 }
 
 /*Style stuff for both the header and footer*/
@@ -14,24 +15,55 @@ header, footer {
     /* Make the header/footer certain sizes, adjust margins/padding so it's not just the stuff inside*/
     background-color: var(--accentColor);
     padding: 1em;
-    font-size: 1.5em;
+    display: block;
+    border-radius: 5px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    /* why is 2nd line centering werid?*/
 }
 
 main{
     padding: 1em;
 }
 
+h1{
+    font-size: 2.5em;
+}
+
+h2{
+    border-bottom: var(--accentColor2) 2px solid;
+}
+
+.profilePic{   
+    display: flex;
+    float: right;
+    border:var(--accentColor2) 4px solid;
+    border-radius: 15px;
+}
+
+img{
+    width: 100px;   
+    border-radius: 10px;
+}
+
+ul{
+    padding: 15px 10px 10px 50px;
+}
+
 ul li{
     text-indent: 3px;
+    margin: 5px;
     font-style: italic;
 }
 ul li a{
     font-style: normal;
 }
 
-/* add a hover effect*/
 li:hover{
-    background-color: rgb(204, 204, 204);   
+    background-color: var(--accentColor2);   
 }
 
 li a:hover{
