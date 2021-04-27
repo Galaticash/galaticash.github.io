@@ -14,7 +14,7 @@
 header, footer {
     /* Make the header/footer certain sizes, adjust margins/padding so it's not just the stuff inside*/
     background-color: var(--accentColor);
-    padding: 1em;
+    padding: 1.2em;
     display: block;
     border-radius: 5px;
 }
