@@ -3,81 +3,101 @@
     padding: 0;
     box-sizing: border-box;
 
+    /* Variables for the fonts*/
     --mainFont: "Roboto";
     --headerFont: "Pacifico";
 
-    --primaryColor: white; /* color of the background*/
-    --secondaryColor: black; /* color of the main font*/
-    --accentColor: rgb(176, 114, 235); /* color that p o p s*/
-    --accentColor2: rgb(158, 157, 157);
+    --primaryColor: white;
+    /* color of the background */
+    --secondaryColor: black;
+    /* color of the main font */
+    --accentColor: rgb(110, 45, 175);
+    /* color that p o p s */
+    --accentColor2: rgb(215, 215, 215);
+    /* another color 'cause it's fun */
 
     font-family: var(--mainFont), sans-serif;
 }
 
-/*Style stuff for both the header and footer*/
+main {
+    padding: 1em;
+    max-width: 500px;
+}
+
+/*Styles stuff for both the header and footer */
 header, footer {
-    /* Make the header/footer certain sizes, adjust margins/padding so it's not just the stuff inside*/
+    /* TODO: Make the header/footer certain sizes, adjust margins/padding so it's not just the stuff inside*/
     background-color: var(--accentColor);
+    color: var(--accentColor2);
     padding: 1.2em;
     display: block;
     border-radius: 5px;
-    }
+}
 
-footer{
+footer {
     display: grid;
     justify-content: center;
 }
 
-footer div{
+footer div {
     justify-self: center;
 }
 
-main{
-    padding: 1em;
+footer a {
+    color: var(--accentColor2);
 }
 
-h1, h2{
+footer a:hover {
+    color: var(--primaryColor);
+}
+
+/* Style for the headings */
+h1, h2 {
     font-family: var(--headerFont), serif;
 }
 
-h1{
+h1 {
     font-size: 2.5em;
 }
 
-h2{
+h2 {
     border-bottom: var(--accentColor2) 2px solid;
 }
 
-.profilePic{   
+/* Style for the profile pic img */
+#profilePic {
     display: flex;
     float: right;
-    border:var(--accentColor2) 4px solid;
+    border: var(--accentColor2) 4px solid;
     border-radius: 15px;
 }
 
-img{
-    width: 125px;   
+img {
+    width: 125px;
     border-radius: 10px;
 }
 
-ul{
+/* Style for the lists */
+ul {
     padding: 15px 10px 10px 50px;
 }
 
-ul li{
+ul li {
     text-indent: 3px;
     margin: 5px;
     font-style: italic;
+    max-width: 300px;
 }
-ul li a{
+
+ul li a {
     font-style: normal;
 }
 
-li:hover{
-    color: var(--accentColor2);   
+li:hover {
+    background-color: var(--accentColor2);
 }
 
-li a:hover{
+li a:hover {
     color: var(--accentColor);
     font-style: italic;
 }

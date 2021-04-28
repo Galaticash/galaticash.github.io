@@ -36,6 +36,7 @@ img{
 li {
     color: var(--backgroudColor);
     list-style: none;
+    max-width: 150px;
 }
 
 
