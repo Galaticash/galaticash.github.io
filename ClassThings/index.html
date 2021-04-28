@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page || Ashley DeMott</title>
+    <meta name="description" content="Home page for Ashley DeMott's WDD230 class">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico|Roboto">
     <!-- <link rel="icon" href="images/fileName.png"/> -->
 
 </head>
@@ -15,24 +17,28 @@
     <header>
         <h1>Ashley DeMott</h1>
         <div class="profilePic">
-            <img src="images/ProfilePic.jpg" alt="Ashley DeMott" />
+            <img src="images/ProfilePic250.jpg" alt="Profile picture of Ashley DeMott" />
         </div>
     </header>
     <main>
         <h2>WDD 230: Assignments</h2>
         <ul>
-            <li>Other
+            <!--<li>Other
                 <ul>
                     <li>Lesson 01: <a href="pages/testFile.html">Lesson Name</a></li>
                     <li>ICE Challenge Test: <a href="pages/ICEPricing.html">Lesson Name</a></li>
                 </ul>
-            </li>
+            </li> -->
+            <li>Lesson 01 <a href="pages/testTwo.html">Lesson Name</a></li>
             <li>Lesson 02:</li>
             <li>Lesson 03:</li>
-            <li></li>
         </ul>
     </main>
-    <footer>&copy; 2021 | Ashley DeMott | Idaho |&nbsp<a href="BYUI.edu"></a>BYUI Online Learning</a><br> Last Updated <div class="updateDate"></div></footer>
+    <footer>
+        <div class="footerInfo">&copy; <span id="year"></span> | Ashley DeMott | Idaho |&nbsp<a href="https://www.byui.edu/online">BYUI Online Learning</a></div>
+        <div class="updateData">Last Updated <span id="updateDate"></span></div>
+    </footer>
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>

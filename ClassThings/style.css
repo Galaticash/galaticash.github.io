@@ -1,13 +1,17 @@
-/* Set up variables (primary color, font size, etc)*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
-    --primaryColor: white;
-    --secondaryColor: black;
-    --accentColor: rgb(198, 138, 255);
-    --accentColor2: rgb(197, 197, 197);
+    --mainFont: "Roboto";
+    --headerFont: "Pacifico";
+
+    --primaryColor: white; /* color of the background*/
+    --secondaryColor: black; /* color of the main font*/
+    --accentColor: rgb(176, 114, 235); /* color that p o p s*/
+    --accentColor2: rgb(158, 157, 157);
+
+    font-family: var(--mainFont), sans-serif;
 }
 
 /*Style stuff for both the header and footer*/
@@ -17,16 +21,23 @@ header, footer {
     padding: 1.2em;
     display: block;
     border-radius: 5px;
-}
+    }
 
 footer{
-    display: flex;
+    display: grid;
     justify-content: center;
-    /* why is 2nd line centering werid?*/
+}
+
+footer div{
+    justify-self: center;
 }
 
 main{
     padding: 1em;
+}
+
+h1, h2{
+    font-family: var(--headerFont), serif;
 }
 
 h1{
@@ -45,7 +56,7 @@ h2{
 }
 
 img{
-    width: 100px;   
+    width: 125px;   
     border-radius: 10px;
 }
 
@@ -63,7 +74,7 @@ ul li a{
 }
 
 li:hover{
-    background-color: var(--accentColor2);   
+    color: var(--accentColor2);   
 }
 
 li a:hover{
