@@ -1,0 +1,63 @@
+:root{
+        /* Variables for the fonts*/
+        --mainFont: "Roboto";
+        --headerFont: "Pacifico";
+    
+        --primaryColor: white;
+        /* color of the background */
+        --secondaryColor: black;
+        /* color of the main font */
+        --accentColor: rgb(110, 45, 175);
+        /* color that p o p s */
+        --accentColor2: rgb(215, 215, 215);
+        /* another color 'cause it's fun */
+}
+
+/* classes related to instructions*/
+.chosen{
+    font-weight: bold;
+}
+
+/* The main grid*/
+#mainGrid{
+
+}
+
+/* each of the three sections in the grid*/
+.designTopic{
+    margin: 10px;
+    max-width: 500px; /* change with media queries*/
+    border:rgb(215, 215, 215) 2px solid;
+
+}
+
+/* Styles for things within the designTopic sections*/
+.designTopic > h2{
+    color: var(--primaryColor);
+    background-color: var(--accentColor);
+    margin: -4px; /* make variables for px sizes*/
+    padding: 7px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+
+/*Media queries, small medium and large*/
+
+/*
+can measure by px or em:
+
+small - one column (default)
+medium - two columns (768 px)(32.5 em)
+large - three columns (1200 px)(64 em) 
+
+Double check sizes, also small - big or big - small?
+*/
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
