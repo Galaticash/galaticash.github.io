@@ -72,11 +72,12 @@ header {
     padding: 5px 10px 5px 15px;
 }
 
-.designTopic>img {
+.designTopic>section>img {
     margin: auto;
     margin-top: 10px;
     max-width: 100%;
 }
+
 
 /* Media Queries */
 /* When the screen is a 'medium' size, 768px to 1024px */

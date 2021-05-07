@@ -4,7 +4,7 @@ var devItems = document.querySelectorAll(".dev");
 for (i = 0; i < devItems.length; i++)
 {
     //console.log(devItems[i]);
-    //devItems[i].remove()
+    devItems[i].remove()
 }
 
 document.querySelector('#updateDate').textContent = document.lastModified;
