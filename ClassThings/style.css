@@ -1,8 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+ :root{
     /* Variables for the fonts*/
     --mainFont: "Roboto";
     --headerFont: "Pacifico";
@@ -15,18 +11,23 @@
     /* color that p o p s */
     --accentColor2: rgb(215, 215, 215);
     /* another color 'cause it's fun */
+}
 
+body {
     font-family: var(--mainFont), sans-serif;
+    max-width: 1000px;
+    margin: auto;
 }
 
-main {
-    padding: 1em;
+main {    
     max-width: 500px;
+    margin: 0;
+    padding: 1em;        
+    box-sizing: border-box;
 }
 
-/*Styles stuff for both the header and footer */
+/* Styles stuff for both the header and footer */
 header, footer {
-    /* TODO: Make the header/footer certain sizes, adjust margins/padding so it's not just the stuff inside*/
     background-color: var(--accentColor);
     color: var(--accentColor2);
     padding: 1.2em;
@@ -86,11 +87,11 @@ ul li {
     text-indent: 3px;
     margin: 5px;
     font-style: italic;
-    max-width: 300px;
 }
 
 ul li a {
     font-style: normal;
+    padding: 5px;
 }
 
 li:hover {
@@ -100,4 +101,15 @@ li:hover {
 li a:hover {
     color: var(--accentColor);
     font-style: italic;
+}
+
+/* Media Queries */
+/* When the screen is a 'medium' size, 768px to 1024px*/
+@media (min-width: 768px) {
+
+}
+
+/* When the screen is a 'large' size, 1024px or larger*/
+@media (min-width: 1024px) {
+
 }

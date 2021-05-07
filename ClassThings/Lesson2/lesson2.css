@@ -1,63 +1,94 @@
-:root{
-        /* Variables for the fonts*/
-        --mainFont: "Roboto";
-        --headerFont: "Pacifico";
-    
-        --primaryColor: white;
-        /* color of the background */
-        --secondaryColor: black;
-        /* color of the main font */
-        --accentColor: rgb(110, 45, 175);
-        /* color that p o p s */
-        --accentColor2: rgb(215, 215, 215);
-        /* another color 'cause it's fun */
+:root {
+    /* Variables for the fonts*/
+    --mainFont: "Roboto";
+    --headerFont: "Pacifico";
+
+    /* color of the background*/
+    --primaryColor: white;
+    /* color of the main font*/
+    --secondaryColor: black;
+    /* color that p o p s*/
+    --accentColor: rgb(110, 45, 175);
+    /* another color 'cause it's fun*/
+    --accentColor2: rgb(215, 215, 215);
 }
 
-/* classes related to instructions*/
-.chosen{
+body {
+    font-family: var(--mainFont), sans-serif;
+}
+
+/* classes related to 'instructions' section */
+.chosen {
     font-weight: bold;
 }
 
-/* The main grid*/
-#mainGrid{
-
+/* styles for the back button to get back to the main page */
+nav a {
+    color: var(--primaryColor);
+    padding: 5px;
 }
 
-/* each of the three sections in the grid*/
-.designTopic{
+nav a:hover {
+    color: var(--accentColor2);
+}
+
+/* styles for the top header */
+header {
+    background-color: var(--accentColor);
+    color: var(--primaryColor);
+    font-family: var(--headerFont), serrif;
+
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+/* The main grid, defaults to 1 column */
+#mainGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Each of the three sections within the grid */
+.designTopic {
     margin: 10px;
-    max-width: 500px; /* change with media queries*/
-    border:rgb(215, 215, 215) 2px solid;
-
+    max-width: 500px;
+    border: rgb(215, 215, 215) 2px solid;
 }
 
-/* Styles for things within the designTopic sections*/
-.designTopic > h2{
+/* Styles for the headers within the designTopic sections */
+.designTopic>h2 {
     color: var(--primaryColor);
     background-color: var(--accentColor);
-    margin: -4px; /* make variables for px sizes*/
-    padding: 7px;
+    font-family: var(--headerFont), serif;
+    margin: -4px;
+    /* make variables for px sizes*/
+    padding: 10px;
     border-radius: 10px 10px 0px 0px;
-
 }
 
-
-/*Media queries, small medium and large*/
-
-/*
-can measure by px or em:
-
-small - one column (default)
-medium - two columns (768 px)(32.5 em)
-large - three columns (1200 px)(64 em) 
-
-Double check sizes, also small - big or big - small?
-*/
-
-@media (min-width: 768px) {
-
+/* Everything else in the designTopic sections */
+.designTopic>section {
+    /* added some padding to separate it from the header*/
+    padding: 5px 10px 5px 15px;
 }
 
-@media (min-width: 1200px) {
+.designTopic>img {
+    margin: auto;
+    margin-top: 10px;
+    max-width: 100%;
+}
 
+/* Media Queries */
+/* When the screen is a 'medium' size, 768px to 1024px */
+@media only screen and (min-width: 768px) {
+    #mainGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* When the screen is a 'large' size, 1024px or wider */
+@media only screen and (min-width: 1024px) {
+    #mainGrid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
