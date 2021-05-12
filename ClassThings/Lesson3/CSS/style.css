@@ -1,10 +1,106 @@
-/* Media Queries */
-/* When the screen is a 'medium' size, 768px to 1024px*/
-@media (min-width: 768px) {
+/* Media queries, small --> medium --> large */
+:root {
+    --mainFont: ;
+    --headerFont: ;
+
+    --primaryColor: #12aaeb;
+    --activeColor:#0a74a1;
+    --hoverColor: rgba(0, 0, 0, .55);
+}
+
+.dev{
+    display: none;
+}
+
+body {
+    background-color: white;
+    color: black;
+}
+
+h1{
 
 }
 
-/* When the screen is a 'large' size, 1024px or larger*/
-@media (min-width: 1024px) {
+nav {
+    margin: 0 auto;
+    /* TODO: asjust width here or adjust 'medium' cutoff */
+    max-width: 360px;
+    background-color: var(--primaryColor);
+}
+
+#navigation {
+    list-style: none;
+    padding: 0;
+    grid-template-columns: auto;
+    display: grid;
+}
+
+#navigation li:first-child {
+    display: block;
+}
+
+#navigation li {
+    display: none;
+}
+
+#navigation a {
+    /* whole area is clickable, not just text*/
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+#navigation a:hover,
+#navigation a.active:hover {
+    color: white;
+    background-color: var(--hoverColor);
+}
+
+/* The li with the class 'active' has this styling applied */
+#navigation a.active {
+    color: white;
+    background-color: var(--activeColor);
+}
+
+/* show the li when the class 'responsive' is added */
+#navigation.responsive li{
+    display:block;
+}
+
+/* Media Queries */
+/* TODO:
+- adjust ->small? medium? size so there isn't an awkward gap between small and medium (see iPhone display)
+*/
+
+/* When the screen is a 'medium' size, 768px to 1024px, 34.5 to 54.5 */
+@media only screen and (min-width: 768px) {
+    nav{
+        /* across the entire page*/
+        max-width: 100%;
+    }
+    #navigation{
+        grid-template-columns:repeat(5, auto);
+        /* auto vs 1fr, little different based on text within, auto ignores things with no textContent*/
+    }
+    #navigation li{
+        display: block;
+    }
+    #navigation a{
+        text-align: center;
+    }
+    #navigation li:first-child{
+        display: none;
+    }
+}
+
+/* When the screen is a 'large' size, 1024px or wider */
+@media only screen and (min-width: 52.4em) {
+    #navigation{
+        width: 800px;
+        margin: 16px auto;
+    }
 
 }

@@ -1,7 +1,7 @@
  :root{
     /* Variables for the fonts*/
     --mainFont: "Roboto";
-    --headerFont: "Pacifico";
+    --headerFont: "Great Vibes";
 
     --primaryColor: white;
     /* color of the background */
@@ -101,6 +101,13 @@ li:hover {
 li a:hover {
     color: var(--accentColor);
     font-style: italic;
+}
+
+button{
+    background-color: var(--accentColor);
+    /*background-color: var(--accentColor2);*/
+    box-shadow: none;
+    border: none;
 }
 
 /* Media Queries */
