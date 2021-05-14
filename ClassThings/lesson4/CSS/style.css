@@ -1,0 +1,141 @@
+:root {
+    --primaryColor: #4176c5;
+    --secondaryColor: #f7f314;
+    --activeColor: #4a82d4;
+    --hoverColor: #2e548b;
+
+    --mainFont: "Roboto";
+    --headerFont: "Roboto";
+
+    --logoWidth: 150px;
+
+}
+
+body {
+    font-family: var(--mainFont);
+}
+
+header, footer{
+    color: white;
+    background-color: var(--primaryColor);
+}
+
+/* - - header formatting - -*/
+header {
+    display: grid;
+    grid-template-columns: 2;
+    /* !! redo header grid so it's img title nav?*/
+}
+
+#title {
+    display: grid;
+    grid-template-columns: var(--logoWidth) auto;
+    font-family: var(--headerFont);
+}
+
+nav {
+    margin: 0 auto;
+    /* TODO: asjust width here or adjust 'medium' cutoff */
+    background-color: var(--primaryColor);
+    grid-column: 2;
+}
+
+#navigation {
+    list-style: none;
+    padding: 0;
+    /*
+    display: grid;
+    justify-content: right;
+    border: black solid 3px;*/
+}
+
+#navigation li:first-child {
+    display: block;
+    border: black solid 2px;
+    /* !! Make box look good when it is expanded !! */
+}
+
+#navigation li {
+    display: none;
+}
+
+#navigation a {
+    color: white;
+
+    /* whole area is clickable, not just text*/
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#navigation a:hover,
+#navigation a.active:hover {
+    color: white;
+    background-color: var(--hoverColor);
+}
+
+/* The li with the class 'active' has this styling applied */
+#navigation a.active {
+    color: white;
+    background-color: var(--activeColor);
+}
+
+/* show the li when the class 'responsive' is added */
+#navigation.responsive li {
+    display: block;
+}
+
+/* - - main section formatting - - */
+main{
+    margin: 10px;
+}
+
+/* When the screen is a 'medium' size, 768px to 1024px, 34.5 to 54.5 */
+@media only screen and (min-width: 600px) {
+    header {
+        /* make it rows instead of columns */
+        grid-template-rows: 2;
+        padding-bottom: 0px;
+    }
+    nav {
+        /*across the entire page*/
+        max-width: 100%;
+        padding: 0px;
+        /*put the nav in the 2nd row*/
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #navigation {
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+        /* auto vs 1fr, little different based on text within, auto ignores things with no textContent*/
+    }
+
+    #navigation li {
+        display: block;
+    }
+
+    #navigation a {
+        text-align: center;
+    }
+
+    #navigation li:first-child {
+        display: none;
+    }
+}
+
+/* When the screen is a 'large' size, 1024px or wider */
+@media only screen and (min-width: 1024px) {
+    nav {
+        justify-content: left;
+    }
+    #navigation {
+        /* Not much of a change?*/
+        max-width: 1000px;
+        margin: 16px auto;
+    }
+
+}
