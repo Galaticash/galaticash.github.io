@@ -1,6 +1,4 @@
-<head>
-  <body>
-    [
+[
   {
     "id": "424905",
     "img_src": "https://mars.jpl.nasa.gov/msl-raw-images/msss/01000/mcam/1000MR0044631300503690E01_DXXX.jpg"
@@ -3354,5 +3352,3 @@
     "img_src": "https://mars.jpl.nasa.gov/msl-raw-images/msss/01000/mcam/1000MR0044631090503669C00_DXXX.jpg"
   }
 ]
-  </body>
-</head>
